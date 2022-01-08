@@ -2,7 +2,7 @@
 //  MunicipalProblemsTableViewController.swift
 //  Modulo3NativoIOS
 //
-//  Created by user211591 on 1/8/22.
+//  Created by NiltonFirmino on 1/8/22.
 //
 
 import UIKit
@@ -12,11 +12,7 @@ class MunicipalProblemsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
     }
 
     // MARK: - Table view data source
