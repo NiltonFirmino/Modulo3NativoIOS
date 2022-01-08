@@ -9,25 +9,27 @@
 /* Begin PBXBuildFile section */
 		5221EFD72788E7F100D5A4FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5221EFD62788E7F100D5A4FD /* AppDelegate.swift */; };
 		5221EFD92788E7F100D5A4FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5221EFD82788E7F100D5A4FD /* SceneDelegate.swift */; };
-		5221EFDB2788E7F100D5A4FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5221EFDA2788E7F100D5A4FD /* ViewController.swift */; };
+		5221EFDB2788E7F100D5A4FD /* ProblemDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5221EFDA2788E7F100D5A4FD /* ProblemDetailsViewController.swift */; };
 		5221EFDE2788E7F100D5A4FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5221EFDC2788E7F100D5A4FD /* Main.storyboard */; };
 		5221EFE12788E7F100D5A4FD /* Modulo3NativoIOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5221EFDF2788E7F100D5A4FD /* Modulo3NativoIOS.xcdatamodeld */; };
 		5221EFE32788E7F200D5A4FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5221EFE22788E7F200D5A4FD /* Assets.xcassets */; };
 		5221EFE62788E7F300D5A4FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5221EFE42788E7F300D5A4FD /* LaunchScreen.storyboard */; };
 		527C67542789A659009E191D /* MunicipalProblemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527C67532789A659009E191D /* MunicipalProblemsTableViewController.swift */; };
+		527C67562789ADCA009E191D /* ProblemAddEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527C67552789ADCA009E191D /* ProblemAddEditViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5221EFD32788E7F100D5A4FD /* Modulo3NativoIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Modulo3NativoIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5221EFD62788E7F100D5A4FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5221EFD82788E7F100D5A4FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5221EFDA2788E7F100D5A4FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5221EFDA2788E7F100D5A4FD /* ProblemDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemDetailsViewController.swift; sourceTree = "<group>"; };
 		5221EFDD2788E7F100D5A4FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5221EFE02788E7F100D5A4FD /* Modulo3NativoIOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Modulo3NativoIOS.xcdatamodel; sourceTree = "<group>"; };
 		5221EFE22788E7F200D5A4FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5221EFE52788E7F300D5A4FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5221EFE72788E7F300D5A4FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		527C67532789A659009E191D /* MunicipalProblemsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MunicipalProblemsTableViewController.swift; sourceTree = "<group>"; };
+		527C67552789ADCA009E191D /* ProblemAddEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemAddEditViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +65,8 @@
 				5221EFD62788E7F100D5A4FD /* AppDelegate.swift */,
 				5221EFD82788E7F100D5A4FD /* SceneDelegate.swift */,
 				527C67532789A659009E191D /* MunicipalProblemsTableViewController.swift */,
-				5221EFDA2788E7F100D5A4FD /* ViewController.swift */,
+				5221EFDA2788E7F100D5A4FD /* ProblemDetailsViewController.swift */,
+				527C67552789ADCA009E191D /* ProblemAddEditViewController.swift */,
 				5221EFDC2788E7F100D5A4FD /* Main.storyboard */,
 				5221EFE22788E7F200D5A4FD /* Assets.xcassets */,
 				5221EFE42788E7F300D5A4FD /* LaunchScreen.storyboard */,
@@ -146,7 +149,8 @@
 			files = (
 				5221EFE12788E7F100D5A4FD /* Modulo3NativoIOS.xcdatamodeld in Sources */,
 				527C67542789A659009E191D /* MunicipalProblemsTableViewController.swift in Sources */,
-				5221EFDB2788E7F100D5A4FD /* ViewController.swift in Sources */,
+				527C67562789ADCA009E191D /* ProblemAddEditViewController.swift in Sources */,
+				5221EFDB2788E7F100D5A4FD /* ProblemDetailsViewController.swift in Sources */,
 				5221EFD72788E7F100D5A4FD /* AppDelegate.swift in Sources */,
 				5221EFD92788E7F100D5A4FD /* SceneDelegate.swift in Sources */,
 			);
