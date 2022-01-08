@@ -17,6 +17,7 @@
 		527C67542789A659009E191D /* MunicipalProblemsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527C67532789A659009E191D /* MunicipalProblemsTableViewController.swift */; };
 		527C67562789ADCA009E191D /* ProblemAddEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527C67552789ADCA009E191D /* ProblemAddEditViewController.swift */; };
 		527C67582789C647009E191D /* ProblemsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527C67572789C647009E191D /* ProblemsTableViewCell.swift */; };
+		527C675A2789DE6C009E191D /* UIViewController+Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 527C67592789DE6C009E191D /* UIViewController+Context.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		527C67532789A659009E191D /* MunicipalProblemsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MunicipalProblemsTableViewController.swift; sourceTree = "<group>"; };
 		527C67552789ADCA009E191D /* ProblemAddEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemAddEditViewController.swift; sourceTree = "<group>"; };
 		527C67572789C647009E191D /* ProblemsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemsTableViewCell.swift; sourceTree = "<group>"; };
+		527C67592789DE6C009E191D /* UIViewController+Context.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Context.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 			children = (
 				5221EFD62788E7F100D5A4FD /* AppDelegate.swift */,
 				5221EFD82788E7F100D5A4FD /* SceneDelegate.swift */,
+				527C67592789DE6C009E191D /* UIViewController+Context.swift */,
 				527C67532789A659009E191D /* MunicipalProblemsTableViewController.swift */,
 				5221EFDA2788E7F100D5A4FD /* ProblemDetailsViewController.swift */,
 				527C67552789ADCA009E191D /* ProblemAddEditViewController.swift */,
@@ -156,6 +159,7 @@
 				5221EFDB2788E7F100D5A4FD /* ProblemDetailsViewController.swift in Sources */,
 				5221EFD72788E7F100D5A4FD /* AppDelegate.swift in Sources */,
 				5221EFD92788E7F100D5A4FD /* SceneDelegate.swift in Sources */,
+				527C675A2789DE6C009E191D /* UIViewController+Context.swift in Sources */,
 				527C67582789C647009E191D /* ProblemsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

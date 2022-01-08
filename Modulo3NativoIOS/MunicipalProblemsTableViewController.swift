@@ -6,23 +6,42 @@
 //
 
 import UIKit
+import CoreData
 
 class MunicipalProblemsTableViewController: UITableViewController {
+    
+    var fetchedResultsController = NSFetchedResultsController<MunicipalProblem>!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        loadProblems()
         
     }
 
-    // MARK: - Table view data source
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        if let problemViewController = segue.destination as? ProblemsTableViewCell,
+           let indexPath = tableView.indexPathForSelectedRow {
+            problemViewController.problem = fetchedResultsController.object(at: indexPath)
+        }
+    }
+    
+    func loadProblems(){
+        let fetchRequest: NSFetchRequest<MunicipalProblem> = MunicipalProblem.fetchRequest()
+        let sortDescriptor =  NSSortDescriptor(key: "title", ascending: true)
+        fetchRequest.sortDescriptors = [sortDescriptor]
+        
+        fetchedResultsController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
+        
+        fetchedResultsController.delegate = self
+        try? fetchedResultsController.performFetch()
+    }
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return fetchedResultsController.fetchedObjects?.count ?? 0
     }
 
     
@@ -30,10 +49,8 @@ class MunicipalProblemsTableViewController: UITableViewController {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? ProblemsTableViewCell else {
             return UITableViewCell()
         }
-        cell.ImageViewPoster.image = UIImage(named: <#T##String#>)
-        cell.LabelTitleProblem.text = "Problema"
-        cell.LabelProblemLocation.text = "Rua não sei Aonde, 15"
-
+        let municipalproblem = fetchedResultsController.object(at: indexPath)
+        cell.configureWith(municipalproblem)
         return cell
     }
     
@@ -83,4 +100,11 @@ class MunicipalProblemsTableViewController: UITableViewController {
     }
     */
 
+}
+
+extension MunicipalProblemsTableViewController: NSFetchedResultsControllerDelegate{
+    func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange anObject: Any, at indexPath: IndexPath?, for type: NSFetchedResultsChangeType, newIndexPath: IndexPath?){
+        
+        tableView.reloadData()
+    }
 }

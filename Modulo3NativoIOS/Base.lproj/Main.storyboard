@@ -110,6 +110,12 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="ImageViewProblem" destination="pWX-Tu-OIH" id="K2e-21-Tis"/>
+                        <outlet property="LabelProblemLocation" destination="aaO-me-tAx" id="4Ac-4l-MWm"/>
+                        <outlet property="LabelTitleProblem" destination="dWQ-DI-ltT" id="m84-Yl-ub8"/>
+                        <outlet property="TextViewDetailProblem" destination="zqM-T1-dh3" id="98l-Ms-0CE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Svh-v5-nfV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
