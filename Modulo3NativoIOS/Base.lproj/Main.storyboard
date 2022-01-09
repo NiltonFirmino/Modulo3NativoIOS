@@ -34,6 +34,9 @@
                                 <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Upload de Imagem"/>
+                                <connections>
+                                    <action selector="ButtonUploadImage:" destination="kZw-ak-lYr" eventType="touchUpInside" id="qY0-FE-W5l"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PiE-Bw-ReP">
                                 <rect key="frame" x="20" y="239" width="374" height="128"/>
@@ -53,6 +56,9 @@
                                 <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Finalizar"/>
+                                <connections>
+                                    <action selector="ButtonDone:" destination="kZw-ak-lYr" eventType="touchUpInside" id="Ijl-P2-D7d"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="2n7-JS-Wbu"/>
@@ -64,6 +70,7 @@
                         <outlet property="ImageViewProblem" destination="PiE-Bw-ReP" id="NHc-qD-1sX"/>
                         <outlet property="LabelProblemLocation" destination="Pjh-Aq-j0K" id="l8H-zW-Rlo"/>
                         <outlet property="LabelWhatProblem" destination="D8M-kK-EeZ" id="L4N-ak-nd0"/>
+                        <outlet property="TextViewDetails" destination="eGG-ie-Hlb" id="6yc-8r-imG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CrF-Tj-diD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
